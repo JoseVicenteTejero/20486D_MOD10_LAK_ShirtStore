@@ -20,6 +20,7 @@ namespace ShirtStoreWebsite
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
              .ConfigureLogging((hostingContext, logging) =>
              {
                  var env = hostingContext.HostingEnvironment;
